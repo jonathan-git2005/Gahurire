@@ -1,0 +1,517 @@
+ /* General Reset and Body Styling */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.index {
+  font-family: Arial, sans-serif;
+  background-color: hsl(39, 65%, 56%);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: rgb(84, 36, 196);
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.welcome-text {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.h2 {
+  content: center;
+}
+/* Navigation Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-container {
+  position: absolute;
+  left: 10px;
+  top: 300px;
+  height: 500px;
+  padding: 10px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 5px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+nav.active .nav-links {
+  display: flex;
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.menu-icon div {
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* Subscribe  Styling */
+.subscribe-link,
+.signin-link {
+  position: absolute;
+  top: 100px;
+}
+
+.subscribe-link {
+  right: 20px;
+}
+
+.signin-link {
+  right: 200px;
+}
+
+.signin-link a {
+  color: #f8eeee;
+  background-color: #007BFF;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signin-link a:hover {
+  background-color: #ca265d;
+}
+
+/* Subscribe Button Styling */
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn .icon {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.subscribe-btn:hover {
+  background-color: hsl(150, 100%, 35%);
+}
+
+/* Main Section Styling */
+main {
+  padding: 20px;
+}
+
+main section {
+  margin: 30px auto 20px;
+  padding: 20px;
+  background: hsl(0, 2%, 21%);
+  border-radius: 8px;
+  max-width: 1000px;
+  max-height: 500px;
+  box-shadow: 0 2px 4px rgba(224, 62, 103, 0.1);
+  color: rgb(152, 224, 17);
+  text-align: center;
+}
+
+/* Headings with color classes */
+.blue {
+  color: #0b75e7;
+}
+
+.green {
+  color: #ec790e;
+}
+
+
+.red {
+  color: #4a1bca;
+}
+
+/* Page Title Styling */
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Image Styling */
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: hsl(210, 80%, 46%);
+}
+
+td {
+  background-color: #10e63e;
+}
+
+th.blue {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
+td.green {
+  background-color: #28a745;
+  color: white;
+}
+
+td.red {
+  background-color: #dc3545;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Fees Section */
+.fees-section h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  background-color: hsl(118, 88%, 49%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Positioned Boxes */
+div.fixed,
+div.relative {
+  background-color: #ccc;
+  position: fixed;
+  top: 206px;
+  height: 400px;
+  width: 248px;
+  border: 10px solid #73AD21;
+}
+
+div.fixed {
+  right: 250px;
+}
+
+div.relative {
+  left: 250px;
+}
+
+
+
+/* Zoom-out effect on image click */
+img.zoomable {
+  transition: transform 50.3s ease;
+  cursor: pointer;
+}
+
+img.zoomable:active {
+  transform: scale(50.8);
+}
+
+.image {
+  position: center;
+}
+
+
+body.live-score {
+  font-family: Arial, sans-serif;
+  background-image: url("stadium.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.back-button {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.back-button a {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.score-table {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-collapse: collapse;
+}
+
+.score-table th,
+.score-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.score-table input[type="number"] {
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+ 
+
+.score-table {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-collapse: collapse;
+}
+
+.score-table th,
+.score-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.score-table input[type="number"] {
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+
+body.sign {
+  font-family: Arial, sans-serif;
+  background-color: #34d60c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+.signin-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.signin-container h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+button.back-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.error-message {
+  color: red;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/*major sport*/
+section.major{
+  margin: 30px auto 20px;
+  padding: 20px;
+  background: hwb(66 16% 3%);
+  border-radius: 8px;
+  max-width: 1000px;
+  max-height: 500px;
+  box-shadow: green;
+  color:hsla(108, 81%, 48%, 0.849);
+  text-align: center;
+}
+
+/*higlight*/
+
+  h3.highlights{
+    margin: 30px auto 20px;
+  padding: 20px;
+  background: hwb(66 16% 3%);
+  border-radius: 8px;
+  max-width: 1000px;
+  max-height: 500px;
+  color:#e0179d86;
+  text-align: center;
+}
